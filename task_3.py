@@ -1,25 +1,25 @@
-import random
+# This is buggy
+import random as r
+
+print("Do you want to roll a die?: ")
+
+response = str(input())
 
 while True:
-    print("Do you want to roll a dice?: ")
+    if response == "Yes" or "yes":
+        print(str(r.randint(1, 6)))
 
-    answer = str(input())
+        print("Do you want to roll a die?: ")
 
-    if answer == "yes" or "Yes":
-        print(random.randint(1, 6))
+        response_1 = str(input())
 
-        print("Do you want to roll a dice?: ")
-
-        answer_1 = str(input())
-
-        if answer_1 == "yes" or "Yes":
-            print(random.randint(1, 6))
-        else:
-            print("okay")
+        if response_1 == "Yes" or "yes":
+            print(str(r.randint(1, 6)))
+        elif response_1 == "No" or "no":
+            print("Okay!")
             break
-    elif answer == "no" or "No":
-        print("okay")
+    elif response == "No" or "no":
+        print("Okay!")
         break
-
 
 exit()
