@@ -1,5 +1,7 @@
+print("Enter the username: ")
 username = input()
 
+print("Enter the User's Exam Mark")
 exam_mark = float(input())
 
 
@@ -16,4 +18,4 @@ def check_grade(mark):
         return "E"
 
 
-print(check_grade(exam_mark))
+print(str(username) + "'s mark is " + str(check_grade(exam_mark)))
