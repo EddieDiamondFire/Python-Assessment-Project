@@ -3,11 +3,13 @@ while True:
     username = input()
 
     if username == "end":
+        print("Goodbye")
         break
     print("Enter the User's Exam Mark")
     exam_mark = float(input())
 
     if exam_mark == "end":
+        print("Goodbye")
         break
 
     def check_grade(mark):
